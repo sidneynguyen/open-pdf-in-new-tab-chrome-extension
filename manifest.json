@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Open PDFs in a New Tab",
+  "description": "This extension opens PDFs in a new tab",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["newtabpdf.js"]
+    }
+  ]
+}
